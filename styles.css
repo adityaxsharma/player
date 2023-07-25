@@ -1,0 +1,81 @@
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f7f7;
+    background-image: url("images/bg.jpg") ;
+    border: 5px solid black;
+    
+}
+
+.player {
+    height: 100%;
+    margin: 100% 100% 100% 100%;
+    width: 100%;
+    /* background-color: #fcf9f9; */
+    /* padding: 0px */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.player-details {
+    margin-bottom: 70px;
+}
+
+.player-artwork img {
+    margin: 72px ;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.song-title {
+    margin-top: 0px;
+    font-size: 24px;
+}
+
+.artist-name {
+    margin-top: 5px;
+    color: #666;
+    font-size: 18px;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: bottom;
+}
+
+.control-btn {
+    margin: 0 15px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: #312e2e;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    color: #12990d;
+}
+
+.fa-step-backward::before {
+    content: "\f048";
+}
+
+.fa-play::before {
+    content: "\f04b";
+}
+
+.fa-step-forward::before {
+    content: "\f051";
+}
